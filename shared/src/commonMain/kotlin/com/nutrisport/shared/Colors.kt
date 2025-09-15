@@ -18,6 +18,9 @@ val SurfaceDarker = Gray
 val SurfaceBranch = Yellowish
 val SurfaceError = Red
 
+val BorderIdle = GrayDarker
+val BorderError = Red
+
 val TextPrimary = Black
 val TextSecondary = Orange
 val TextWhite = White
@@ -25,7 +28,7 @@ val TextBrand = Yellowish
 
 val ButtonPrimary = Yellowish
 val ButtonSecondary = GrayDarker
-val ButtonDisabled = GrayLighter
+val ButtonDisabled = GrayDarker
 
 val IconPrimary = Black
 val IconSecondary = Orange
