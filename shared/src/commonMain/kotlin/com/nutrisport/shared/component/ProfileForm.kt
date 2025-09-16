@@ -1,5 +1,6 @@
 package com.nutrisport.shared.component
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.imePadding
@@ -36,6 +37,7 @@ fun ProfileForm(
             )
             .verticalScroll(state = rememberScrollState())
             .imePadding(),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         CustomTextField(
             value = firstName,
@@ -76,7 +78,7 @@ fun ProfileForm(
         CustomTextField(
             value = phoneNumber ?: "",
             onValueChange = onPhoneNumberChange,
-            placeholder = "Address",
+            placeholder = "Phone Number",
             error = phoneNumber.toString().length !in 3..8,
         )
     }
